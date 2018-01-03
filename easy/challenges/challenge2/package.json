@@ -1,0 +1,11 @@
+{
+  "name": "challenge2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jasmine *.spec.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
