@@ -17,16 +17,21 @@ class Cipher {
     encrypt(str, offset) {
         let position
         let newString = ""
-
+        let newChar = ""
+        let newPosition
+        let modulo = this.alphabet.length;
+        
         if (offset === "undefined") {
             throw Error
         }
 
         for (let i = 0; i < str.length; i++) {
 
-            position = this.alphabet.indexOf(str[i])
+            position = this.alphabet.indexOf(str[i]) % modulo
             if (position !== -1) {
-                newString += this.alphabet[position + offset]
+                newPosition = (position + offset) % modulo
+                newChar = this.alphabet[newPosition]
+                newString += newChar
             } else {
                 newString += str[i]
             }
@@ -41,5 +46,5 @@ class Cipher {
 
 }
 let cipher = new Cipher();
-console.log(cipher.encrypt("t123est"))
+console.log(cipher.encrypt("9xyz", 1))
 module.exports = Cipher
