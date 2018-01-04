@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "jasmine *.spec.js",
-    "start": "node app.js"
+    "start": "node Cipher.js"
   },
   "author": "",
   "license": "ISC"
