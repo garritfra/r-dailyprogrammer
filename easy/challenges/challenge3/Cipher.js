@@ -20,7 +20,7 @@ class Cipher {
         let newChar = ""
         let newPosition
         let modulo = this.alphabet.length;
-        
+
         if (offset === "undefined") {
             throw Error
         }
@@ -45,6 +45,4 @@ class Cipher {
     }
 
 }
-let cipher = new Cipher();
-console.log(cipher.encrypt("9xyz", 1))
 module.exports = Cipher
