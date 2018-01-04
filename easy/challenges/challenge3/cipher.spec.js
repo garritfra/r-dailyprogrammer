@@ -28,3 +28,10 @@ describe("Caesar Cipher Encryption", () => {
     })
 
 })
+
+describe("Caesar Cipher Decryption", () => {
+
+    it("should return abc", () => {
+        expect(cipher.decrypt("bcd", 1)).toEqual("abc")
+    })
+})

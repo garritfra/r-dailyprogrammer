@@ -35,8 +35,8 @@ class Cipher {
         return newString
     }
 
-    decrypt(str) {
-
+    decrypt(str, offset) {
+        return this.encrypt(str, -offset)   //Cheap, but it works ;)
     }
 
 }
