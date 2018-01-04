@@ -10,9 +10,19 @@ for extra credit, have the program log this information in a file to be accessed
 import Data.List
 import System.IO
 
---Initialize name
-name = "Garrit" :: String
-age = 19 :: Int
-redditName = "garritfra" :: String
+evalUser :: String -> String -> String -> String
 
-evalUser name age redditName = "your name is " ++ name ++ ", you are " ++ age ++ " years old, and your username is " ++ redditName
+evalUser name age redditName = ("your name is " ++ name ++ ", you are " ++ age ++ " years old, and your username is " ++ redditName)
+
+main = do
+    putStrLn "What's your name?"
+    name <- getLine
+
+    putStrLn "What's your age?"
+    age <- getLine
+
+    putStrLn "What's your Reddit name?"
+    redditName <- getLine
+
+    putStrLn (evalUser name age redditName)
+
