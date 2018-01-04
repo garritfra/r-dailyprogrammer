@@ -25,4 +25,6 @@ main = do
     redditName <- getLine
 
     putStrLn (evalUser name age redditName)
+    putStrLn "Press enter to continue..."
+    getLine
 
