@@ -1,0 +1,16 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "jasmin": "^0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine *.spec.js",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
